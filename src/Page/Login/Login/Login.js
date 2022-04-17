@@ -1,21 +1,13 @@
-import React, { useRef } from 'react';
-import { Button, Form, ToastContainer } from 'react-bootstrap';
+import React, { useState } from 'react';
+import './Login.css'
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { toast } from 'react-toastify';
-import PageTitle from '../../Shared/PageTItle/PageTitle';
-import Loading from '../../Shared/Loading/Loading';
 
 const Login = () => {
-    const emailRef = useRef('');
-    const passwordRef = useRef('');
-    const navigate = useNavigate();
-    const location = useLocation();
-
-    let from = location.state?.from?.pathname || "/";
-    let errorElement;
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
     const [
         signInWithEmailAndPassword,
         user,
@@ -23,63 +15,30 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
-    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
-
-    if (loading || sending) {
-        return <Loading></Loading>
+    const handleEmail = e => {
+        setEmail(e.target.value)
     }
-
-    if (user) {
-        navigate(from, { replace: true });
+    const handlePassword = e => {
+        setPassword(e.target.value)
     }
-
-    if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
-    }
-
-    const handleSubmit = event => {
-        event.preventDefault();
-        const email = emailRef.current.value;
-        const password = passwordRef.current.value;
-
-        signInWithEmailAndPassword(email, password);
-    }
-
-    const navigateRegister = event => {
-        navigate('/logout');
-    }
-
-    const resetPassword = async () => {
-        const email = emailRef.current.value;
-        if (email) {
-            await sendPasswordResetEmail(email);
-            toast('Sent email');
-        }
-        else {
-            toast('please enter your email address');
-        }
+    const handleLogin = e => {
+        e.preventDefault()
+        signInWithEmailAndPassword(email, password)
     }
     return (
+        <div className='login-form py-3'>
+            <h2 style={{ textAlign: 'center' }}>Please Login</h2>
+            <form onSubmit={handleLogin}>
+                <input onBlur={handleEmail} type="email" name="email" id="" placeholder='Email Address' required />
 
-        <div className='container w-50 mx-auto'>
-            <PageTitle title="Login"></PageTitle>
-            <h2 className='text-primary text-center mt-2'>Please Login</h2>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
-                </Form.Group>
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
-                    Login
-                </Button>
-            </Form>
-            {errorElement}
-            <p>New to Genius Car? <Link to="/logout" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
+                <input onBlur={handlePassword} type="password" name="password" id="" placeholder='Password' required />
+
+                <input className='w-50 mx-auto btn btn-success mt-2'
+                    type="submit"
+                    value="Login" />
+            </form>
+            <p>New User? <Link to="/signup" className='text-info pe-auto text-decoration-none' >Please Sign Up</Link> </p>
             <SocialLogin></SocialLogin>
-            <ToastContainer />
         </div>
     );
 };

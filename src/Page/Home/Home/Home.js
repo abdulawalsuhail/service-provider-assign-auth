@@ -1,13 +1,13 @@
 import React from 'react';
 import Accounteds from '../../Accounteds/Accounteds';
-import Banner from '../Banner/Banner';
+import PageTitle from '../../Shared/PageTItle/PageTitle';
 import Services from '../Services/Services';
 
 const Home = () => {
     return (
 
         <>
-            {/* <Banner></Banner> */}
+            {/* <PageTitle title="Home"></PageTitle> */}
             <Services></Services>
             <Accounteds></Accounteds>
         </>

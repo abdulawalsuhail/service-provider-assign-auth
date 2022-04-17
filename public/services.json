@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "625ba0d01762f2d912d41a1a",
+        "picture": "https://i.ibb.co/RPBWYVN/accounter1.jpg",
+        "name": "Violet Hurley",
+        "price": 3000,
+        "about": "Magna laborum labore qui officia. Id veniam labore in voluptate magna sunt labore esse officia magna Lorem laborum sit eu. Ex officia aliquip ea proident ullamco excepteur Lorem mollit officia. Eiusmod tempor enim nulla adipisicing consectetur eiusmod eiusmod Lorem occaecat non exercitation aute est. Anim tempor ut sunt deserunt aute."
+    },
+    {
+        "_id": "625ba0d0cb1841fdeeaed96e",
+        "picture": "https://i.ibb.co/VYc2v20/accounter2.jpg",
+        "name": "Kelly Roy",
+        "price": 8000,
+        "about": "Fugiat nostrud nisi cupidatat sint dolore cupidatat sit quis velit. Elit quis nulla quis ea mollit ad occaecat tempor aliquip deserunt. Sint mollit aute cillum officia anim qui nisi aliquip veniam id. Exercitation deserunt ad aute labore nisi mollit dolor ea. Nisi velit ut do qui voluptate elit. Velit fugiat nulla labore officia ipsum minim fugiat culpa pariatur."
+    },
+    {
+        "_id": "625ba0d0ebcea33907b9d708",
+        "picture": "https://i.ibb.co/fN7VvG8/accounter3.jpg",
+        "name": "Dotson Roach",
+        "price": 2000,
+        "about": "Enim et ut ad fugiat ea laborum enim ad veniam ea exercitation eiusmod Lorem ad. Nostrud dolor nulla sint minim do deserunt ullamco nulla incididunt sunt eu qui nostrud ea. In mollit qui quis incididunt cillum ipsum cupidatat. Amet commodo fugiat consequat eu proident in id aliquip sint ad ipsum eiusmod. Sit veniam deserunt ipsum culpa nulla cillum."
+    }
+]

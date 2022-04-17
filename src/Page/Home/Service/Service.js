@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Service.css'
+import { GiEternalLove } from 'react-icons/gi';
 
 const Service = ({ service }) => {
     const { _id, name, about, picture } = service
@@ -15,7 +16,7 @@ const Service = ({ service }) => {
             <h2 className='text-dark'>{name}</h2>
             {/* <p>Price: {price}</p> */}
             <p><small>{about}</small></p>
-            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-success'>Favorite</button>
+            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-success'><GiEternalLove /> Favorite</button>
         </div>
     );
 };

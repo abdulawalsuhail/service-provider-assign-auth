@@ -8,10 +8,24 @@ import showOf4 from '../../Image/showOf/showOf4.jpg';
 
 
 const accounteds = [
-    { id: 1, name: 'Will Smith', img: showOf1 },
-    { id: 2, name: 'Chris Rock', img: showOf2 },
-    { id: 3, name: 'Dwayne Rock', img: showOf3 },
-    { id: 4, name: 'Messy Vai', img: showOf4 },
+    { id: 1, name: 'Chart Web', about: 'Accounting is the process of recording financial transactions pertaining to a business. The accounting process includes summarizing, analyzing, and reporting these transactions to oversight agencies, regulators, and tax collection entities.', img: showOf1 },
+    {
+        id: 2, name: 'Apple Web', about: `*Accounting Coach. ...
+
+    *Sleeter. ...
+
+    *The Blunt Bean Counter. ...
+
+    *Skoda Minotti Blog. ...
+
+    *The Economist. ...
+
+    *Accounting for Management. ...
+    
+    *Evergreen Small Business. ...`, img: showOf2
+    },
+    { id: 3, name: 'Shopping Accounting Web', about: '', img: showOf3 },
+    { id: 4, name: 'IT Office Accounted Web', about: '', img: showOf4 },
 ]
 const Accounteds = () => {
 

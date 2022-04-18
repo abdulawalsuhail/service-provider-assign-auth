@@ -12,9 +12,9 @@ const Services = () => {
     }, [])
 
     return (
-        <div id='services' className='container'>
+        <div id='services' className='container my-4'>
             <div className="row">
-                <h1 className='text-center '> Find a <span className='text-success fw-bold mt-5'> plan for you</span></h1>
+                <h1 className='text-center'> Find a <span className='text-success fw-bold mt-5'> plan for you</span></h1>
                 <div className="services-container py-3">
                     {
                         services.map(service => <Service

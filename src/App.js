@@ -20,7 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
-        <Route path='/services/:serviceId' element={<ServiceDetails />} />
+        <Route path='/services/:servicesId' element={<ServiceDetails />} />
         <Route path='/accounteds' element={
           <RequireAuth>
             <Accounteds />

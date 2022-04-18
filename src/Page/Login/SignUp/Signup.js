@@ -12,9 +12,8 @@ const Signup = () => {
         createUserWithEmailAndPassword,
         user,
         loading,
-        error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+    const [updating] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
 
@@ -37,8 +36,6 @@ const Signup = () => {
         const password = event.target.password.value;
 
         await createUserWithEmailAndPassword(email, password);
-        await updateProfile({ displayName: name });
-        console.log('Updated profile');
         navigate('/home');
     }
 

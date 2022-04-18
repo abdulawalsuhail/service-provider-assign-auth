@@ -14,13 +14,11 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation()
 
-    let from = location.state?.from?.pathname || "/";
-    let errorElement;
+    let from = location.state?.from?.pathname || "/home";
     const [
         signInWithEmailAndPassword,
         user,
         loading,
-        error,
     ] = useSignInWithEmailAndPassword(auth);
 
     if (loading) {
@@ -31,9 +29,7 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-    if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
-    }
+
 
     const handleEmail = e => {
         setEmail(e.target.value)

@@ -29,13 +29,6 @@ const Header = () => {
                             <Nav.Link as={Link} to="/accounteds">Accounteds</Nav.Link>
                             <Nav.Link as={Link} to="/services">Services</Nav.Link>
                             <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-                            {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                            </NavDropdown> */}
                             <Nav.Link as={Link} to="about">About</Nav.Link>
 
                             {
@@ -47,7 +40,7 @@ const Header = () => {
                                     </Nav.Link>}
                         </Nav>
                         <Nav>
-                            <div className='p-2 fs-4'>
+                            <div className='p-2 fs-4 text-white'>
                                 <BsFacebook /> <FiInstagram /> <AiFillTwitterCircle />
                             </div>
                         </Nav>

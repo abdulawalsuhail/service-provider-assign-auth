@@ -1,10 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Service.css'
-import { GiEternalLove } from 'react-icons/gi';
 
 const Service = ({ service }) => {
-    const { _id, name, about, picture } = service
+    const { _id, name, about, picture, button, price } = service
     const navigate = useNavigate();
 
     const navigateToServiceDetail = id => {
@@ -12,11 +11,11 @@ const Service = ({ service }) => {
     }
     return (
         <div className='service'>
-            <img className='w-25' src={picture} alt="" />
+            <img className='w-100' src={picture} alt="" />
             <h2 className='text-dark'>{name}</h2>
-            {/* <p>Price: {price}</p> */}
+            <p>Price: {price}</p>
             <p><small>{about}</small></p>
-            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-success'><GiEternalLove /> Favorite</button>
+            <button onClick={() => navigateToServiceDetail(_id)} className='btn btn-success'>{button}</button>
         </div>
     );
 };

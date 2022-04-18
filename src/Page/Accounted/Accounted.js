@@ -1,4 +1,5 @@
 import React from 'react';
+import { GiEternalLove } from 'react-icons/gi';
 
 const Accounted = ({ accounted }) => {
     const { name, img, about } = accounted;
@@ -9,7 +10,7 @@ const Accounted = ({ accounted }) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <p className="card-text">{about}</p>
-                    <a href="#" className="btn btn-success">Please Checkout</a>
+                    <a href="#" className="btn btn-success"><GiEternalLove /> Favorite</a>
                 </div>
             </div>
         </div>

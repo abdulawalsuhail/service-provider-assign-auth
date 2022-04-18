@@ -1,23 +1,26 @@
 [
     {
         "_id": "625ba0d01762f2d912d41a1a",
-        "picture": "https://i.ibb.co/RPBWYVN/accounter1.jpg",
-        "name": "Violet Hurley",
-        "price": 3000,
-        "about": "Magna laborum labore qui officia. Id veniam labore in voluptate magna sunt labore esse officia magna Lorem laborum sit eu. Ex officia aliquip ea proident ullamco excepteur Lorem mollit officia. Eiusmod tempor enim nulla adipisicing consectetur eiusmod eiusmod Lorem occaecat non exercitation aute est. Anim tempor ut sunt deserunt aute."
+        "picture": "https://i.ibb.co/9v2Z6DH/390-3907636-hand-with-credit-card-png.jpg",
+        "name": "Normal Card",
+        "price": "€0.00/month",
+        "button": "Get Bank Account",
+        "about": "A virtual debit card Free payments worldwide Up to 3 free withdraws Deposit protection"
     },
     {
         "_id": "625ba0d0cb1841fdeeaed96e",
-        "picture": "https://i.ibb.co/VYc2v20/accounter2.jpg",
-        "name": "Kelly Roy",
-        "price": 8000,
-        "about": "Fugiat nostrud nisi cupidatat sint dolore cupidatat sit quis velit. Elit quis nulla quis ea mollit ad occaecat tempor aliquip deserunt. Sint mollit aute cillum officia anim qui nisi aliquip veniam id. Exercitation deserunt ad aute labore nisi mollit dolor ea. Nisi velit ut do qui voluptate elit. Velit fugiat nulla labore officia ipsum minim fugiat culpa pariatur."
+        "picture": "https://i.ibb.co/s9hq7D9/markus-winkler-ahjz-VINku-Cs-unsplash.jpg",
+        "name": "Premium Card",
+        "price": "$4.90/month",
+        "button": "Open Free Bank Account",
+        "about": "Free Virtual Card Up to 10 Spaces sub-accounts Shared Spaces Round-ups"
     },
     {
         "_id": "625ba0d0ebcea33907b9d708",
-        "picture": "https://i.ibb.co/fN7VvG8/accounter3.jpg",
-        "name": "Dotson Roach",
-        "price": 2000,
-        "about": "Enim et ut ad fugiat ea laborum enim ad veniam ea exercitation eiusmod Lorem ad. Nostrud dolor nulla sint minim do deserunt ullamco nulla incididunt sunt eu qui nostrud ea. In mollit qui quis incididunt cillum ipsum cupidatat. Amet commodo fugiat consequat eu proident in id aliquip sint ad ipsum eiusmod. Sit veniam deserunt ipsum culpa nulla cillum."
+        "picture": "https://i.ibb.co/LJX2tgd/markus-winkler-DJo-G5-Gs-Xf-Mw-unsplash.jpg",
+        "name": "Popular Card",
+        "price": "€9.90/month",
+        "button": "Special Bank Account",
+        "about": "Up to 5 free withdrawals in the Eurozone Flight and luggage delay cover Medical emergency cover  Winter activities insurance"
     }
 ]

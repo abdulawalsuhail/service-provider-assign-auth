@@ -1,0 +1,10 @@
+.about {
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.about img {
+    margin-top: 4px;
+    border-radius: 8px;
+}

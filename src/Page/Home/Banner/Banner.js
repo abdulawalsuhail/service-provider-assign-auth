@@ -37,7 +37,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3 className='text-success'>Personal Project Time</h3>
+                        <h3>Personal <span className='text-success'> Project Time</span></h3>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

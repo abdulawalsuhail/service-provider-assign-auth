@@ -29,8 +29,6 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
-
-
     const handleEmail = e => {
         setEmail(e.target.value)
     }

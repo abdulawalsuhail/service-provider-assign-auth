@@ -6,8 +6,9 @@
 
 ### This website :
 
-###### You Can Book Your Bank Accunted 
+###### A  Accounted web where you will see the products List and Customers Feedbacks.
 ###### And This Web Site Has Multiple Packages
+###### Users also can add a product to the cart or remove it from the cart
 ###### Also You Can Chekout Your Order 
 ###### And You Can login And Logout 
 

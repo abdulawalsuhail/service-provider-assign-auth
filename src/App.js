@@ -5,10 +5,11 @@ import Accounteds from './Page/Accounteds/Accounteds';
 import Blogs from './Page/Blogs/Blogs';
 import Checkout from './Page/CheckOut/CheckOut/Checkout';
 import Home from './Page/Home/Home/Home';
+import Service from './Page/Home/Service/Service';
+import Services from './Page/Home/Services/Services';
 import Login from './Page/Login/Login/Login';
 import RequireAuth from './Page/Login/RequireAuth/RequireAuth';
 import Signup from './Page/Login/SignUp/Signup';
-import ServiceDetails from './Page/ServiceDetails/ServiceDetails';
 import Footer from './Page/Shared/Footer/Footer';
 import Header from './Page/Shared/Header/Header';
 import NotFound from './Page/Shared/NotFound/NotFound';
@@ -20,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/home' element={<Home />} />
-        <Route path='/services/:servicesId' element={<ServiceDetails />} />
+        <Route path='/services' element={<Services />} />
         <Route path='/accounteds' element={
           <RequireAuth>
             <Accounteds />
